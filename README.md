@@ -9,24 +9,24 @@
 2.算法所依赖的包
 为了能够正常运行代码，需要在python中安装算法所依赖的包。在Windows系统下建议使用python强大的包管理工具pip 
 
-（例如安装TensorFlow，可以直接在Windows命令行下面直接输入：pip install tensorflow 等待安装即可。）需要安装的包有：padas,numpy,tensorflow,matplotlib,statsmodels,scipy,patsy,sklearn。
+（例如安装TensorFlow，可以在Windows命令行下面直接输入：pip install tensorflow 等待安装即可。）需要安装的包有：padas,numpy,tensorflow,matplotlib,statsmodels,scipy,patsy,sklearn。
 
 所有的包安装成功之后，可以使用 pip list 命令进行查看。
 
 3.使用方法
 本地部署：
 
-使用开发工具pycharm：（注意要用专业版），前提要有github账号，本地安装git并在pycharm中登录github账号以及配置好git。可以直接克隆到pycharm中，然后在pycharm中断中输入 python manage.py runserver 开启服务器，在浏览器中输入127.0.0.1:8000/gupiao/index 即可访问本系统。
+使用开发工具pycharm：（注意要用专业版），前提要有github账号，本地安装git并在pycharm中登录github账号以及配置好git。可以直接克隆到pycharm中，然后在pycharm终端中输入 python manage.py runserver 开启服务器，在浏览器中输入127.0.0.1:8000/gupiao/index 即可访问系统。
 
 不使用开发工具运行系统方法：可以下载压缩包，然后解压，Windows系统下进入命令行，同样通过 python manag.py runserver 开启服务器，浏览器访问即可。
 
-云服务器部署：(Windows系统) 云服务器中要安装好python，django以及开发依赖的包等，同本地安装一样。把项目源文件拷贝到云服务器中，在系统命令行输入 (注意是：python manage.py runserver 0.0.0.0:8000) 开启服务器，然后通过浏览器进行访问即可。云服务器公网ip:8000/gupiao/index
+云服务器部署：(Windows系统) 云服务器中要安装好python，django以及开发依赖的包等，同本地安装一样。把项目源文件拷贝到云服务器中，在系统命令行输入 (注意是：python manage.py runserver 0.0.0.0:8000) 开启服务器，然后通过浏览器进行访问即可。访问方式：云服务器公网ip:8000/gupiao/index
 
 # 可能会遇到的坑
 
-1.把项目部署在云服务器上时如果遇到拒绝访问的解决办法：（1）在安全组设置中添加可以访问的端口。（2）修改setting.py文件中的ALLOWED_HOSTS[]为ALLOWED_HOSTS['*']     (3) 开启服务器时一定要使用 python manage.py runserver 0.0.0.0:8000
+1.把项目部署在云服务器上时如果遇到拒绝访问的解决办法：（1）在云服务器安全组设置中添加可以访问的端口。（2）修改setting.py文件中的ALLOWED_HOSTS[]为ALLOWED_HOSTS['*']     (3) 开启服务器时一定要使用 python manage.py runserver 0.0.0.0:8000
 
-2.使用plt.savefig()来保存生成的图像时要写在plt.show()的前面，不然保存的图像是口空白的。
+2.使用plt.savefig()来保存生成的图像时要写在plt.show()的前面，不然保存的图像是空白的。
 
 # 项目扩展
-本系统中在股票价格预测模块目前主要实现了基于LSTM递归神经网络算法和SVM算法的预测，如果读者有更好的预测算法可以进行扩展。在项目分析诊断模块，目前该系统只实现了基于LSTM递归神经网络算法的诊断分析，如果读者有更多更好的，可以尝试使用其他算法进行拓展。
+本系统中在股票价格预测模块目前主要实现了基于LSTM递归神经网络算法和SVM算法的预测，如果读者有更好的预测算法可以进行扩展。在项目分析诊断模块，目前该系统只实现了基于LSTM递归神经网络算法的诊断分析，如果读者有更多更好的实现算法，可以尝试进行拓展。
