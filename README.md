@@ -7,9 +7,14 @@
 1.项目运行环境：本系统运行环境python版本为python3.5.2（建议python3.5或者python3.6） 前端使用django框架进行搭建，django版本为1.8.19（建议不要使用最新版本）关于python环境的安装和配置以及django框架的安装配置和使用方法这里不再详细描述，如果需要请参考：https://www.cnblogs.com/lovele-/p/8718894.html
 
 2.算法所依赖的包
-为了能够正常运行代码，需要在python中安装算法所依赖的包。在Windows系统下建议使用python强大的包管理工具pip （例如安装TensorFlow，可以直接在Windows命令行下面直接输入：pip install tensorflow 等待安装即可。）需要安装的包有：padas,numpy,tensorflow,matplotlib,statsmodels,scipy,patsy,sklearn。所有的包安装成功之后，可以使用 pip list 命令进行查看。
+为了能够正常运行代码，需要在python中安装算法所依赖的包。在Windows系统下建议使用python强大的包管理工具pip 
+
+（例如安装TensorFlow，可以直接在Windows命令行下面直接输入：pip install tensorflow 等待安装即可。）需要安装的包有：padas,numpy,tensorflow,matplotlib,statsmodels,scipy,patsy,sklearn。
+
+所有的包安装成功之后，可以使用 pip list 命令进行查看。
 
 3.使用方法
+
 # 可能会遇到的坑
 
 # 项目扩展
