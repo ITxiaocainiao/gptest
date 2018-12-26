@@ -73,7 +73,7 @@
   
   （2）修改setting.py文件中的ALLOWED_HOSTS[]为ALLOWED_HOSTS['*'] 
     
-   (3) 开启服务器时一定要使用 python manage.py runserver 0.0.0.0:8000
+     (3) 开启服务器时一定要使用 python manage.py runserver 0.0.0.0:8000
 
 2.使用plt.savefig()来保存生成的图像时要写在plt.show()的前面，不然保存的图像是空白的。
 
